@@ -1,0 +1,60 @@
+---
+title: "My finance research project"
+author: "Bradley Student"
+date: "October 8, 2015"
+output: pdf_document
+bibliography: bibliography.bib
+---
+This is an R Markdown document. Markdown is a **simple** formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. 
+```{r}
+summary(cars)
+```
+You can embed R code into text like this:
+1. To show the mean stopping distance: `r mean(cars$dist)` reported in cars.
+2. To show the standard deviation of stopping distance:  `r sd(cars$dist)` reported in cars.
+3. To show the minimum stopping distance:  `r min(cars$dist)` reported in cars.
+Lets look at the first six lines of cars
+```{r}
+head(cars)
+```
+You can also embed plots, for example:
+```{r, echo=FALSE}
+plot(cars)
+```
+Note that the `echo = FALSE` parameter was added to the code chunk above to prevent printing of the R code that generated the plot.
+Here is how it looks with 'echo = TRUE'
+```{r, echo=TRUE}
+plot(cars)
+```
+Look at discoveries over many years
+```{r}
+plot(discoveries)
+```
+Look at the euro
+```{r}
+plot(EuStockMarkets)
+```
+```{r}
+str(JohnsonJohnson)
+```
+Graph of JohnsonJohnson quarterly earnings
+```{r}
+plot(JohnsonJohnson)
+```
+Try another kind of plot
+```{r}
+plot(occupationalStatus)
+```
+Look at presidential approval
+```{r}
+plot(presidents)
+```
+Here is a graphical representation of US State centers
+```{r}
+plot(state.center)
+```
+Look at Internet usage
+```{r}
+plot(WWWusage)
+```
